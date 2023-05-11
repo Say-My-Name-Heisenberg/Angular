@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class New1Component {
 
+  name:string="Balan"
+
+  initval=100
+  placeholder="Enter Your Age"
+
+  display(element:any){
+    console.log("Submitted")
+    alert(element.value + " years old are you")
+  }
 }

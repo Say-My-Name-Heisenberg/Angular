@@ -1,0 +1,13 @@
+<h1> Addition </h1>
+<hr>
+<input type="number"  #v1><br>
+<input type="number"  #v2>
+
+<br>
+
+<button (click)="add(v1,v2)" >Add</button>
+<p>Result:{{data}}</p>
+
+<br>
+<input type="text" [(ngModel)]="twoway">
+<p>{{twoway}}</p>
