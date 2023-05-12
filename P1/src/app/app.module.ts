@@ -9,6 +9,8 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MultiplicationComponent } from './multiplication/multiplication.compone
     New2Component,
     NavComponent,
     HomeComponent,
-    MultiplicationComponent
+    MultiplicationComponent,
+    DirectiveComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

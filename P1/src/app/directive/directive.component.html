@@ -1,0 +1,26 @@
+<H1>Structural Directive</H1>
+
+
+<div *ngIf="students;else notfound">
+    <table class="table table-striped">
+        <tr class="thead-dark">
+            <th>NAME</th>
+            <th>Age</th>
+            <th>Class</th>
+            <th>Fee</th>
+            <th>Date of Birth</th>
+        </tr>
+        <tr *ngFor="let i of students">
+        <td>{{i.name|uppercase}}</td>
+        <td>{{i.age}}</td>
+        <td>{{i.class}}</td>
+        <td>{{i.fee|currency:"EUR"}}</td>
+        <td>{{i.dob|date:"MMM dd yyyy"}}</td>
+        </tr>
+    </table>
+</div>
+
+<ng-template #notfound >
+    <h1>404</h1>
+    <h3>No data Found</h3>
+</ng-template>
